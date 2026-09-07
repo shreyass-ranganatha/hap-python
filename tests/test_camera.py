@@ -53,9 +53,9 @@ def test_init(mock_driver):
     )
     assert (
         management.get_characteristic("SupportedVideoStreamConfiguration").get_value()
-        == "AX4BAQACCQMBAAEBAAIBAAMMAQJAAQIC8AADAg8AAwwBAgAEAgIAAwMCHgADDAECgAICAuA"
-        "BAwIeAAMMAQKAAgICaAEDAh4AAwwBAuABAgJoAQMCHgADDAEC4AECAg4BAwIeAAMMAQJAAQ"
-        "IC8AADAh4AAwwBAkABAgK0AAMCHgA="
+        == "AXYBAQACCQMBAAEBAAIBAAMLAQJAAQIC8AADAQ8DCwECAAQCAgADAwEeAwsBAoACAgLgAQMB"
+        "HgMLAQKAAgICaAEDAR4DCwEC4AECAmgBAwEeAwsBAuABAgIOAQMBHgMLAQJAAQIC8AADAR4D"
+        "CwECQAECArQAAwEe"
     )
     assert (
         management.get_characteristic("SupportedAudioStreamConfiguration").get_value()

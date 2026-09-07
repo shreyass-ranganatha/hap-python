@@ -284,7 +284,7 @@ class Camera(Accessory):
                 VIDEO_ATTRIBUTES_TYPES["IMAGE_HEIGHT"],
                 struct.pack("<H", resolution[1]),
                 VIDEO_ATTRIBUTES_TYPES["FRAME_RATE"],
-                struct.pack("<H", resolution[2]),
+                struct.pack("<B", resolution[2]),
             )
             attr_tlv += tlv.encode(VIDEO_TYPES["ATTRIBUTES"], res_tlv)
 
